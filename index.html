@@ -1,62 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Savoir-Khair-Eddine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace de Mohammed Khair-Eddine</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <nav>
-    <h2>Savoir-Khair-Eddine</h2>
-    <ul>
-      <li>Accueil</li>
-      <li>Débutant</li>
-      <li>Intermédiaire</li>
-      <li>Avancé</li>
-      <li>Fichiers</li>
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-logo">Khair-Eddine</div>
+    <ul class="nav-links">
+      <li><a href="biographie.html">À propos</a></li>
+      <li><a href="analyses.html">Analyses</a></li>
+      <li><a href="documents.html">Documents</a></li>
     </ul>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <h1>Bienvenue sur Savoir-Khair-Eddine 📚</h1>
-    <p>Des ressources gratuites pour tous les apprenants</p>
-    <button>Voir les fichiers</button>
-    <section class="downloads">
-  <h2>📂 Ressources disponibles</h2>
-  <section class="levels">
-
-  <h2>📚 Niveaux d'apprentissage</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Débutant</h3>
-      <p>Les bases pour commencer facilement.</p>
-    <a href="debutant.html"><button>Voir les cours</button></a>
+    <div class="hero-left">
+      <span class="hero-label">Espace éducatif</span>
+      <h1 class="hero-title">
+        Mohammed
+        <em>Khair-Eddine</em>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">
+        Écrivain, poète et dramaturge marocain —<br>
+        une voix rebelle de la littérature francophone.
+      </p>
+      <p class="hero-desc">
+        Découvrez la vie, l'œuvre et la pensée de l'un des auteurs les plus
+        singuliers du Maghreb. Des ressources gratuites pour tous les apprenants.
+      </p>
+      <div class="hero-btns">
+        <a href="documents.html" class="btn-primary">Voir les documents</a>
+        <a href="biographie.html" class="btn-secondary">Biographie</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Intermédiaire</h3>
-      <p>Approfondir ses connaissances.</p>
-      <a href="debutant.html"><button>Voir les cours</button></a>
+    <div class="hero-right">
+      <div class="quote-block">
+        <p class="quote-text">
+          « J'écris parce que je ne sais pas faire autre chose.
+          L'écriture est ma seule arme, ma seule liberté. »
+        </p>
+        <span class="quote-author">— Mohammed Khair-Eddine</span>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">1941</div>
+          <div class="stat-label">Né à Tafraout</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Œuvres publiées</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1995</div>
+          <div class="stat-label">Décédé à Rabat</div>
+        </div>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Avancé</h3>
-      <p>Niveau expert et projets réels.</p>
-      <a href="debutant.html"><button>Voir les cours</button></a>
-    </div>
-
-  </div>
-
-</section>
-<a href="files/cours-html.pdf" download>
-  Télécharger le cours HTML
-</a>
-</section>
   </section>
+
+  <!-- CARDS SECTION -->
+  <section class="cards-section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Explorer l'œuvre</h2>
+    </div>
+    <div class="cards-grid">
+
+      <a href="biographie.html" class="card card-clickable">
+  <div class="card-icon">I.</div>
+  <h3 class="card-title">À propos de Khair-Eddine</h3>
+  <p class="card-text">
+    Biographie complète, parcours littéraire et contexte historique
+    de l'écrivain marocain.
+  </p>
+  <span class="card-link">Découvrir →</span>
+</a>
+
+      <div class="card">
+        <div class="card-icon">II.</div>
+        <h3 class="card-title">Analyses de ses œuvres</h3>
+        <p class="card-text">
+          Études critiques, commentaires et interprétations de ses romans,
+          poèmes et pièces de théâtre.
+        </p>
+        <a href="analyses.html" class="card-link">Lire les analyses →</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">III.</div>
+        <h3 class="card-title">Documents & Ressources</h3>
+        <p class="card-text">
+          Fichiers téléchargeables, fiches de lecture et supports pédagogiques
+          pour tous les niveaux.
+        </p>
+        <a href="documents.html" class="card-link">Accéder →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-strip">
+    <span class="footer-text">Ressources gratuites pour tous les apprenants</span>
+    <span class="footer-brand">Espace de M. Khair-Eddine</span>
+  </footer>
 
 </body>
 </html>
